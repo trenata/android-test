@@ -1,14 +1,21 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
     <EditText
-        android:id="@+id/message"
-        android:layout_width="246dp"
+        android:id="@+id/firstName"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hint" />
+        android:hint="@string/hintFirstName"
+        android:inputType="" />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hintLastName"
+        android:inputType="" />
 
     <Button
         android:layout_width="wrap_content"

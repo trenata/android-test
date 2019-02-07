@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Android test</string>
-    <string name="hint">Enter a message</string>
+    <string name="hintFirstName">Enter your first name</string>
+    <string name="hintLastName">Enter your last name</string>
     <string name="button_send">Send</string>
 </resources>

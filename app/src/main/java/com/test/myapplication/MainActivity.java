@@ -9,8 +9,6 @@ import android.widget.EditText;
 
 
 public class MainActivity extends AppCompatActivity {
-    public static final String EXTRA_MESSAGE =
-            "com.halcyonmobile.learning.myapplication.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,9 +19,15 @@ public class MainActivity extends AppCompatActivity {
     public void sendMessage(View view) {
         Intent intent = new Intent(this,
                 DisplayMessageActivity.class);
-        EditText editText = findViewById(R.id.message);
-        String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, message);
+
+        EditText firstName = findViewById(R.id.firstName);
+        EditText lastName = findViewById(R.id.lastName);
+
+        String firstNameString = firstName.getText().toString();
+        String lastNameString = lastName.getText().toString();
+
+        Name name = new Name(firstNameString, lastNameString);
+        intent.putExtra("name", name);
         startActivity(intent);
     }
 }
