@@ -22,6 +22,8 @@
 
         <activity android:name=".DisplayMessageActivity" />
 
+        <activity android:name=".FrameLayout" />
+
     </application>
 
 </manifest>

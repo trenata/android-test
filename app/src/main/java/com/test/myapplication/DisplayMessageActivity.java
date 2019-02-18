@@ -1,6 +1,9 @@
 package com.test.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,5 +20,12 @@ public class DisplayMessageActivity extends AppCompatActivity {
 
         TextView textView = findViewById(R.id.fullName);
         textView.setText(message);
+    }
+
+    public void openFrameLayout(View view) {
+        Intent intent = new Intent(this,
+                FrameLayout.class);
+
+        startActivity(intent);
     }
 }

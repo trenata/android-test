@@ -4,4 +4,8 @@
     <string name="hintFirstName">Enter your first name</string>
     <string name="hintLastName">Enter your last name</string>
     <string name="button_send">Send</string>
+    <string name="image_description">This is a simple android application</string>
+    <string name="hintFrameLayout">Add a better description</string>
+    <string name="button_apply">Apply</string>
+    <string name="pictureDescription">Android robot</string>
 </resources>
