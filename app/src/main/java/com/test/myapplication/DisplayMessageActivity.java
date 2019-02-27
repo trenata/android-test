@@ -22,9 +22,16 @@ public class DisplayMessageActivity extends AppCompatActivity {
         textView.setText(message);
     }
 
+    public void openLinearLayout(View view) {
+        Intent intent = new Intent(this,
+                LinearLayoutActivity.class);
+
+        startActivity(intent);
+    }
+
     public void openFrameLayout(View view) {
         Intent intent = new Intent(this,
-                FrameLayout.class);
+                FrameLayoutActivity.class);
 
         startActivity(intent);
     }

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="@dimen/pictureWidth"
+        android:layout_height="@dimen/pictureHeight"
+        android:scaleType="centerInside"
+        android:src="@drawable/android"
+        android:layout_gravity="center"
+        android:contentDescription="@string/pictureDescription" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/image_description"
+        android:layout_gravity="center" />
+
+    <EditText
+        android:id="@+id/editDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:hint="@string/hintDescription"
+        android:inputType="text" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_apply"
+        android:layout_gravity="bottom"
+        android:onClick="changeDescription" />
+
+</LinearLayout>

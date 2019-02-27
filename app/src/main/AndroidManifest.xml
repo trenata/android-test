@@ -22,7 +22,9 @@
 
         <activity android:name=".DisplayMessageActivity" />
 
-        <activity android:name=".FrameLayout" />
+        <activity android:name=".LinearLayoutActivity" />
+
+        <activity android:name=".FrameLayoutActivity" />
 
     </application>
 
