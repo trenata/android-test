@@ -33,6 +33,7 @@
         android:layout_height="wrap_content"
         android:text="@string/button_apply"
         android:layout_gravity="bottom"
-        android:onClick="changeDescription" />
+        android:onClick="changeDescription"
+        android:layout_marginStart="100dp" />
 
 </FrameLayout>

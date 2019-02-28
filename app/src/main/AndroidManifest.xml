@@ -26,6 +26,8 @@
 
         <activity android:name=".FrameLayoutActivity" />
 
+        <activity android:name=".ConstraintLayoutActivity" />
+
     </application>
 
 </manifest>

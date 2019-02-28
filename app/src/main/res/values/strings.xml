@@ -10,4 +10,5 @@
     <string name="pictureDescription">Android robot</string>
     <string name="textLinear">Linear</string>
     <string name="textFrame">Frame</string>
+    <string name="textConstraint">Constraint</string>
 </resources>

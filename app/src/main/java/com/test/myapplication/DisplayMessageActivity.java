@@ -35,4 +35,11 @@ public class DisplayMessageActivity extends AppCompatActivity {
 
         startActivity(intent);
     }
+
+    public void openConstraintLayout(View view) {
+        Intent intent = new Intent(this,
+                ConstraintLayoutActivity.class);
+
+        startActivity(intent);
+    }
 }
