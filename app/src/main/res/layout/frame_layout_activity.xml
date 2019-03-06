@@ -6,10 +6,10 @@
     <ImageView
         android:layout_width="@dimen/pictureWidth"
         android:layout_height="@dimen/pictureHeight"
-        android:scaleType="centerInside"
-        android:src="@drawable/android"
         android:layout_gravity="top|center"
-        android:contentDescription="@string/pictureDescription" />
+        android:contentDescription="@string/pictureDescription"
+        android:scaleType="centerInside"
+        android:src="@drawable/android" />
 
     <TextView
         android:id="@+id/description"
@@ -23,17 +23,17 @@
         android:id="@+id/editDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
+        android:layout_marginTop="@dimen/pictureHeight"
         android:hint="@string/hintDescription"
         android:inputType="text"
-        android:layout_marginTop="@dimen/pictureHeight" />
+        android:textAlignment="center" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_apply"
         android:layout_gravity="bottom"
+        android:layout_marginStart="100dp"
         android:onClick="changeDescription"
-        android:layout_marginStart="100dp" />
+        android:text="@string/button_apply" />
 
 </FrameLayout>

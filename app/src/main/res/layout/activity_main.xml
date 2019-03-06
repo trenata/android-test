@@ -22,4 +22,10 @@
         android:layout_height="wrap_content"
         android:onClick="sendMessage"
         android:text="@string/button_send" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_recycle_view"
+        android:onClick="openRecycleView" />
 </LinearLayout>

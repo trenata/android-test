@@ -30,4 +30,11 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("name", name);
         startActivity(intent);
     }
+
+    public void openRecycleView(View view) {
+        Intent intent = new Intent(this,
+                RecyclerViewActivity.class);
+
+        startActivity(intent);
+    }
 }
