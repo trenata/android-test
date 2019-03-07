@@ -1,6 +1,7 @@
 package com.test.myapplication;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -47,8 +48,17 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.CityViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(CityViewHolder holder, int position) {
+    public void onBindViewHolder(final CityViewHolder holder, int position) {
         holder.bind(mCityList[position], mCityNameList[position]);
+
+        holder.mCity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent mIntent = new Intent(mContext, DetailActivity.class);
+                mIntent.putExtra("Image", mCityList[holder.getAdapterPosition()]);
+                mContext.startActivity(mIntent);
+            }
+        });
     }
 
     @Override
