@@ -1,4 +1,19 @@
-<android.support.v4.view.ViewPager android:id="@+id/viewpager"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.viewpager.widget.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:attrs="http://schemas.android.com/tools"
+    android:id="@+id/viewpager"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+    android:layout_height="match_parent">
+
+    <com.rd.PageIndicatorView
+        android:id="@+id/pageIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:piv_animationType="scale"
+        app:piv_dynamicCount="true"
+        app:piv_interactiveAnimation="true"
+        attrs:piv_padding="12dp"
+        attrs:piv_radius="8dp" />
+
+</androidx.viewpager.widget.ViewPager>
