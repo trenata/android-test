@@ -18,21 +18,7 @@ public class ViewPagerActivity extends AppCompatActivity {
         viewPager.setAdapter(new CustomPagerAdapter(this));
 
         final PageIndicatorView pageIndicatorView = findViewById(R.id.pageIndicatorView);
-        pageIndicatorView.setCount(4); // specify total count of indicators
-        pageIndicatorView.setSelection(2);
-
-        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {/*empty*/}
-
-            @Override
-            public void onPageSelected(int position) {
-                pageIndicatorView.setSelection(position);
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {/*empty*/}
-        });
+        pageIndicatorView.setViewPager(viewPager);
     }
 }
 
