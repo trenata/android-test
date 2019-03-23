@@ -2,13 +2,13 @@
 <resources>
     <dimen name="pictureHeight">200dp</dimen>
     <dimen name="pictureWidth">150dp</dimen>
-    <dimen name="titleSize">20sp</dimen>
-    <dimen name="descriptionSize">16sp</dimen>
-    <dimen name="descriptionDistanceTop">462dp</dimen>
-    <dimen name="descriptionDistanceSides">48dp</dimen>
-    <dimen name="descriptionDistanceBottom">130dp</dimen>
-    <dimen name="TitleDistanceBottom">8dp</dimen>
+    <dimen name="title_size">20sp</dimen>
+    <dimen name="description_size">16sp</dimen>
+    <dimen name="description_distance_top">462dp</dimen>
+    <dimen name="description_distance_sides">48dp</dimen>
+    <dimen name="description_distance_bottom">130dp</dimen>
+    <dimen name="title_distance_bottom">8dp</dimen>
 
-    <color name="whiteTitle">#FFFFFFFF</color>
-    <color name="whiteDescription">#FFD8D8D8</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_gray">#FFD8D8D8</color>
 </resources>
