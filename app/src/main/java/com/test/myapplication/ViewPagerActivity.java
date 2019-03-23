@@ -14,10 +14,10 @@ public class ViewPagerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.view_pager_activity);
 
-        ViewPager viewPager = findViewById(R.id.viewpager);
+        ViewPager viewPager = findViewById(R.id.view_pager);
         viewPager.setAdapter(new CustomPagerAdapter(this));
 
-        final PageIndicatorView pageIndicatorView = findViewById(R.id.pageIndicatorView);
+        final PageIndicatorView pageIndicatorView = findViewById(R.id.page_indicator_view);
         pageIndicatorView.setViewPager(viewPager);
     }
 }

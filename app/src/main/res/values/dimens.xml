@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="first_keyline">16dp</dimen>
     <dimen name="pictureHeight">200dp</dimen>
     <dimen name="pictureWidth">150dp</dimen>
     <dimen name="title_size">20sp</dimen>
@@ -8,7 +9,4 @@
     <dimen name="description_distance_sides">48dp</dimen>
     <dimen name="description_distance_bottom">130dp</dimen>
     <dimen name="title_distance_bottom">8dp</dimen>
-
-    <color name="white">#FFFFFFFF</color>
-    <color name="light_gray">#FFD8D8D8</color>
 </resources>
